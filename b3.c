@@ -1,17 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 
+void hoandoi(int a, int b)
+{
+	do{
+		printf("nhap so nguyen ");
+		scanf("%d%d",&a,&b);
+		printf("hoan doi la %d%d\n",b,a);
+	}while(a>0||b>0);
+}
 int main()
 {
-	float s=1;
-    float i;
-	int n;
-	printf("nhap n: ");
-	scanf("%d",&n);
-	for(i=1;i<=n;i=i+1)
-	{
-        s=s*i;
-    }
-	printf("ket qua cua phep tinh la: %f",s);
-    return 0;
+	int a,b;
+	hoandoi(a,b);
 }
